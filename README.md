@@ -12,7 +12,7 @@ cert-manager is a Kubernetes add-on that automates the management and issuance o
 - Creates three ClusterIssuers:
   - `letsencrypt-staging` - Let's Encrypt staging environment for testing
   - `letsencrypt-production` - Let's Encrypt production environment
-  - `selfsigned` - Self-signed certificate issuer
+  - `selfsigned-issuer` - Self-signed certificate issuer
 
 ## Provider Requirements
 
