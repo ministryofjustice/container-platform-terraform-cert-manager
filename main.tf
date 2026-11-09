@@ -43,6 +43,8 @@ resource "helm_release" "cert_manager" {
   lifecycle {
     ignore_changes = [keyring]
   }
+
+  depends_on = [module.cert_manager_pod_identity]
 }
 
 resource "kubectl_manifest" "clusterissuers_staging" {
