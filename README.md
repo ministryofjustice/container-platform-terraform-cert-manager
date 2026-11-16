@@ -6,7 +6,7 @@ This module deploys cert-manager on an EKS cluster with AWS IAM integration usin
 
 cert-manager is a Kubernetes add-on that automates the management and issuance of TLS certificates. This module:
 
-- Deploys cert-manager using the official Jetstack Helm chart (v1.20.3)
+- Deploys cert-manager using the official Jetstack Helm chart (v1.21.3)
 - Enables Gateway API support including ListenerSet integration (alpha feature)
 - Configures AWS IAM permissions via [EKS Pod Identity](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html) for Route53 DNS challenge validation
 - Creates three ClusterIssuers:
@@ -27,7 +27,7 @@ cert-manager is a Kubernetes add-on that automates the management and issuance o
 ## Resources Created
 
 - **Kubernetes Namespace**: `cert-manager` namespace with privileged pod security policy
-- **Helm Release**: cert-manager v1.20.3
+- **Helm Release**: cert-manager v1.21.3
 - **EKS Pod Identity**: IAM role with Route53 permissions for DNS-01 challenges
 - **ClusterIssuers**: Three pre-configured issuers (staging, production, self-signed)
 
